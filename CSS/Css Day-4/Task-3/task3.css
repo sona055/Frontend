@@ -1,0 +1,19 @@
+.product-box {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 20px;
+    background-color: lightblue;
+}
+
+.product2 {
+    padding: 30px;
+    margin: 40px;
+    background-color: lightgreen;
+}
+
+.product3 {
+    padding: 10px;
+    margin: 60px;
+    background-color: lightyellow;
+}
