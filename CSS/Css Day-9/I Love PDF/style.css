@@ -1,0 +1,50 @@
+.header img{
+width: 140px;
+height: 30px;
+}
+.header{
+    position: fixed;
+    border: 1px solid black;
+    width: 1500px;
+     shadow 
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+ 
+}
+.menu{
+    display:flex;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.menuside{
+     display:flex;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.menu a{
+    text-decoration:none;
+    padding:8px 15px;
+    width: 100px;
+    color: black;
+    font-size: medium;
+    font-family:'Times New Roman', Times, serif;
+}
+.content{
+   text-align: center;
+    padding : 50px
+
+
+}
+.button{
+   justify-content: center;
+
+    text-align: center;
+}
+.body{
+    background-color: rgb(216, 210, 203);
+}
