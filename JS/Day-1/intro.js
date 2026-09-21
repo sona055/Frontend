@@ -5,6 +5,7 @@ let roleno=55;
 let role="Frontend"
 let boolean=true
 const country="India"
+alert("registered");
 console.log("Initial=" ,Initial);
 console.log("roleno=",roleno);
 console.log("role=",role);
