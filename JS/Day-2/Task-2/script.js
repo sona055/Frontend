@@ -1,0 +1,10 @@
+var vechicleType;
+var place;
+var  arrivlePoint;
+let dropingPoint;
+let depature;
+console.log(vechicleType);
+console.log(place);
+console.log(arrivlePoint);
+console.log(dropingPoint);
+console.log(depature);
