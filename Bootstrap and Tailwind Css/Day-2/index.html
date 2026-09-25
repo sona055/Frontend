@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,13 +8,13 @@
 </head>
 <body>
 <header>
-  <nav class="navbar navbar-dark bg-dark fixed-top shadow-sm py-2">
+  <nav class="navbar navbar-dark bg-dark fixed-top shadow-sm py-1">
     <div class="container">
 
-      <a class="navbar-brand m-0" href="#">
+      <a class="navbar-brand m-0" href="#" >
         <img
-          src="../assets/images/logo/orglogo.jpg"
-          alt="SLA Logo"
+          src="images/download.jpeg"
+          alt="Sky Logo"
          
           class="rounded "
         style="width: 60px;">
@@ -23,14 +23,14 @@
      
       <div class="d-flex align-items-center gap-3">
 
-        <a href="#" class="btn btn-warning fw-semibold px-3">
-          Take a Tour
+        <a href="#" class="btn btn-primary fw-semibold px-3">
+          Explore
         </a>
 
         <span
-          class="bg-white text-danger rounded-circle d-flex align-items-center justify-content-center fw-bold"
+          class="bg-white text-primary rounded-circle d-flex align-items-center justify-content-center fw-bold"
           style="width: 42px; height: 42px;">
-          M
+          SKY
         </span>
 
       </div>
@@ -77,27 +77,25 @@
           type="button"
           data-bs-target="#productBannerCarousel"
           data-bs-slide-to="3"
-          aria-label="Slide 4"
+           aria-label="Slide 4"
         ></button>
 
       </div>
-
-
-      <div class="carousel-inner rounded-3 overflow-hidden shadow">
+ <div class="carousel-inner rounded-3 overflow-hidden shadow"> -->
 
         <div class="carousel-item active">
 
           <img
-            src="https://contents.mediadecathlon.com/s1468346/k$c9e4bc4e429ad3efb3df6aa30d7945b1/defaut.jpg?format=auto&quality=70&f=1536x0"
+            src="images/photo-1464822759023-fed622ff2c3b.avif"
             class="d-block w-100"
-            alt="Basketball Shoes">
+            alt="Basketball Shoes"> 
 
         </div>
 
-        <div class="carousel-item">
+        <div class="carousel-item"> 
 
           <img
-            src="https://contents.mediadecathlon.com/s1468344/k$fb914fb07446cf55446923aae7a61916/defaut.jpg?format=auto&quality=70&f=1536x0"
+            src="images/photo-1477959858617-67f85cf4f1df.avif"
             class="d-block w-100"
             alt="Running Shoes">
 
@@ -106,7 +104,7 @@
         <div class="carousel-item">
 
           <img
-            src="https://contents.mediadecathlon.com/s1468345/k$050fa37f1701ee7c87f5dcd60c74271e/defaut.jpg?format=auto&quality=70&f=1536x0"
+            src="images/photo-1500530855697-b586d89ba3ee.avif"
             class="d-block w-100"
             alt="Sports Shoes" >
 
@@ -115,8 +113,7 @@
         <div class="carousel-item">
 
           <img
-            src="https://contents.mediadecathlon.com/s1468343/k$c0f107edcf2b1816bbc49a1ad6992fe4/defaut.jpg?format=auto&quality=70&f=1536x0"
-            class="d-block w-100"
+            src="images/photo-1507525428034-b723cf961d3e.avif"
             alt="Training Shoes">
 
         </div>
@@ -375,4 +372,681 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
    
 </body>
+</html> -->
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore World</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f5f7fa;
+        }
+
+        /* Navbar */
+        .navbar-brand img {
+            width: 55px;
+            height: 55px;
+            object-fit: cover;
+        }
+
+        /* Hero Carousel */
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.55);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Destination Cards */
+        .destination-card {
+            transition: 0.3s;
+            border: none;
+            overflow: hidden;
+        }
+
+        .destination-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        /* Section title */
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        /* Contact image */
+        .contact-image {
+            height: 350px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #212529;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar navbar-dark bg-dark fixed-top shadow py-2">
+
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="images/download.jpeg"
+                        alt="Explore World Logo"
+                        class="rounded-circle">
+
+                    <span class="ms-2 fw-bold">
+                        Explore World
+                    </span>
+                </a>
+
+                <!-- Navigation -->
+                <div class="d-flex align-items-center gap-2">
+
+                    <a href="#home" class="btn btn-primary">
+                        Home
+                    </a>
+
+                    <a href="#destinations" class="btn btn-outline-light">
+                        Destinations
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline-light">
+                        Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="pt-5 mt-4">
+
+
+        <!-- ================= HERO CAROUSEL ================= -->
+
+        <section id="home" class="container-fluid px-3 mt-3">
+
+            <div id="travelCarousel"
+                class="carousel slide"
+                data-bs-ride="carousel">
+
+                <!-- Indicators -->
+
+                <div class="carousel-indicators">
+
+                    <button type="button"
+                        data-bs-target="#travelCarousel"
+                        data-bs-slide-to="0"
+                        class="active">
+                    </button>
+
+                    <button type="button"
+                        data-bs-target="#travelCarousel"
+                        data-bs-slide-to="1">
+                    </button>
+
+                    <button type="button"
+                        data-bs-target="#travelCarousel"
+                        data-bs-slide-to="2">
+                    </button>
+
+                    <button type="button"
+                        data-bs-target="#travelCarousel"
+                        data-bs-slide-to="3">
+                    </button>
+
+                </div>
+
+
+                <!-- Carousel Images -->
+
+                <div class="carousel-inner rounded-4 overflow-hidden shadow">
+
+
+                    <!-- Slide 1 -->
+
+                    <div class="carousel-item active">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80"
+                            class="d-block w-100"
+                            alt="Mountain landscape">
+
+                        <div class="carousel-caption">
+
+                            <h1 class="fw-bold">
+                                Explore Beautiful Places
+                            </h1>
+
+                            <p>
+                                Discover amazing destinations and
+                                create unforgettable memories.
+                            </p>
+
+                            <a href="#destinations"
+                                class="btn btn-primary">
+                                Explore Now
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Slide 2 -->
+
+                    <div class="carousel-item">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80"
+                            class="d-block w-100"
+                            alt="Beautiful beach">
+
+                        <div class="carousel-caption">
+
+                            <h1>
+                                Discover Paradise
+                            </h1>
+
+                            <p>
+                                Relax and enjoy beautiful beaches
+                                around the world.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Slide 3 -->
+
+                    <div class="carousel-item">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1600&q=80"
+                            class="d-block w-100"
+                            alt="Beautiful city">
+
+                        <div class="carousel-caption">
+
+                            <h1>
+                                Explore Amazing Cities
+                            </h1>
+
+                            <p>
+                                Experience culture, architecture
+                                and city life.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Slide 4 -->
+
+                    <div class="carousel-item">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80"
+                            class="d-block w-100"
+                            alt="Mountain destination">
+
+                        <div class="carousel-caption">
+
+                            <h1>
+                                Adventure Awaits
+                            </h1>
+
+                            <p>
+                                Discover mountains, nature and
+                                exciting adventures.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Previous Button -->
+
+                <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#travelCarousel"
+                    data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon">
+                    </span>
+
+                    <span class="visually-hidden">
+                        Previous
+                    </span>
+
+                </button>
+
+
+                <!-- Next Button -->
+
+                <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#travelCarousel"
+                    data-bs-slide="next">
+
+                    <span class="carousel-control-next-icon">
+                    </span>
+
+                    <span class="visually-hidden">
+                        Next
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= DESTINATIONS ================= -->
+
+        <section id="destinations" class="container py-5">
+
+            <h2 class="text-center section-title">
+                Explore Popular Destinations
+            </h2>
+
+            <p class="text-center text-muted mb-5">
+                Discover beautiful places and plan your next adventure.
+            </p>
+
+
+            <div class="row g-4">
+
+
+                <!-- Card 1 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card destination-card shadow-sm">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top"
+                            alt="Taj Mahal">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Agra, India
+                            </h5>
+
+                            <p class="card-text">
+                                Visit the magnificent Taj Mahal
+                                and experience the history and
+                                culture of Agra.
+                            </p>
+
+                            <a href="#"
+                                class="btn btn-primary">
+                                Explore Place
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 2 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card destination-card shadow-sm">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top"
+                            alt="Tokyo city">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Tokyo, Japan
+                            </h5>
+
+                            <p class="card-text">
+                                Explore modern technology,
+                                traditional culture and
+                                exciting city life.
+                            </p>
+
+                            <a href="#"
+                                class="btn btn-primary">
+                                Explore Place
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 3 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card destination-card shadow-sm">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top"
+                            alt="Bali">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Bali, Indonesia
+                            </h5>
+
+                            <p class="card-text">
+                                Enjoy tropical beaches, nature,
+                                temples and peaceful surroundings.
+                            </p>
+
+                            <a href="#"
+                                class="btn btn-primary">
+                                Explore Place
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 4 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card destination-card shadow-sm">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top"
+                            alt="Travel destination">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Europe
+                            </h5>
+
+                            <p class="card-text">
+                                Discover beautiful architecture,
+                                historic places and unique cultures.
+                            </p>
+
+                            <a href="#"
+                                class="btn btn-primary">
+                                Explore Place
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 5 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card destination-card shadow-sm">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top"
+                            alt="Dubai">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Dubai, UAE
+                            </h5>
+
+                            <p class="card-text">
+                                Experience modern architecture,
+                                deserts and exciting attractions.
+                            </p>
+
+                            <a href="#"
+                                class="btn btn-primary">
+                                Explore Place
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 6 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card destination-card shadow-sm">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top"
+                            alt="Nature">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Nature Escape
+                            </h5>
+
+                            <p class="card-text">
+                                Take a break from city life and
+                                explore peaceful natural landscapes.
+                            </p>
+
+                            <a href="#"
+                                class="btn btn-primary">
+                                Explore Place
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONTACT SECTION ================= -->
+
+        <section id="contact" class="container py-5">
+
+            <h2 class="text-center section-title">
+                Plan Your Next Adventure
+            </h2>
+
+            <div class="row align-items-center g-4">
+
+
+                <!-- Form -->
+
+                <div class="col-lg-6">
+
+                    <h4>
+                        Tell us where you want to explore
+                    </h4>
+
+                    <p class="text-muted">
+                        Send us your details and your preferred
+                        destination.
+                    </p>
+
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Your Name
+                        </label>
+
+                        <input type="text"
+                            class="form-control"
+                            placeholder="Enter your name">
+
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Email Address
+                        </label>
+
+                        <input type="email"
+                            class="form-control"
+                            placeholder="name@example.com">
+
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Destination
+                        </label>
+
+                        <input type="text"
+                            class="form-control"
+                            placeholder="Where do you want to go?">
+
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Message
+                        </label>
+
+                        <textarea
+                            class="form-control"
+                            rows="4"
+                            placeholder="Tell us about your travel plan">
+                        </textarea>
+
+                    </div>
+
+
+                    <button class="btn btn-primary px-4">
+                        Send Request
+                    </button>
+
+                </div>
+
+
+                <!-- Image -->
+
+                <div class="col-lg-6">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=80"
+                        class="img-fluid rounded-4 shadow contact-image"
+                        alt="Travel adventure">
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="py-4">
+
+        <div class="container text-center">
+
+            <h5>
+                Explore World
+            </h5>
+
+            <p class="mb-1">
+                Discover. Explore. Experience.
+            </p>
+
+            <small>
+                © 2026 Explore World. All Rights Reserved.
+            </small>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
 </html>
+```

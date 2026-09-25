@@ -1,0 +1,906 @@
+```css
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f7f8fc;
+
+    color: #182033;
+
+    line-height: 1.6;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+section {
+    padding: 90px 8%;
+}
+
+
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar {
+
+    height: 75px;
+
+    padding: 0 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: white;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow:
+        0 3px 20px rgba(0, 0, 0, 0.07);
+}
+
+
+.logo {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #182033;
+}
+
+
+.logo span {
+
+    color: #635bff;
+}
+
+
+.navbar nav {
+
+    display: flex;
+
+    gap: 30px;
+}
+
+
+.navbar nav a {
+
+    color: #60697a;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.navbar nav a:hover {
+
+    color: #635bff;
+}
+
+
+.nav-button {
+
+    padding: 11px 20px;
+
+    background: #635bff;
+
+    color: white;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.nav-button:hover {
+
+    background: #4d45df;
+
+    transform: translateY(-2px);
+}
+
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero {
+
+    min-height: 650px;
+
+    padding: 100px 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 60px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f3f1ff,
+            #fafaff
+        );
+}
+
+
+.hero-content {
+
+    max-width: 600px;
+}
+
+
+.tag {
+
+    color: #635bff;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+.hero h1 {
+
+    font-size: 65px;
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+
+.hero h1 span {
+
+    color: #635bff;
+
+    display: block;
+}
+
+
+.hero-description {
+
+    color: #6c7485;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+
+.primary-button {
+
+    display: inline-block;
+
+    padding: 14px 23px;
+
+    background: #635bff;
+
+    color: white;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.primary-button:hover {
+
+    background: #4d45df;
+
+    transform: translateY(-3px);
+}
+
+
+
+/* ==========================================
+   CODE VISUAL
+========================================== */
+
+.hero-visual {
+
+    width: 450px;
+}
+
+
+.code-box {
+
+    background: #171a25;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 30px 60px rgba(40, 35, 80, 0.25);
+}
+
+
+.code-top {
+
+    height: 45px;
+
+    padding-left: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    background: #242836;
+}
+
+
+.code-top span {
+
+    width: 10px;
+
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: #777;
+}
+
+
+.code {
+
+    padding: 35px;
+
+    color: #e5e7eb;
+
+    font-family: monospace;
+
+    font-size: 15px;
+
+    line-height: 2;
+}
+
+
+.symbol {
+
+    color: #6fa8ff;
+}
+
+
+.indent {
+
+    padding-left: 30px;
+
+    color: #73d49c;
+}
+
+
+
+/* ==========================================
+   SECTION HEADING
+========================================== */
+
+.section-heading {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+
+.section-heading h2 {
+
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+
+.section-heading > p:last-child {
+
+    color: #737b8d;
+
+    font-size: 14px;
+}
+
+
+
+/* ==========================================
+   TECHNOLOGY SECTION
+========================================== */
+
+.technology-section {
+
+    background: white;
+}
+
+
+.technology-grid {
+
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.technology-card {
+
+    background: white;
+
+    border: 1px solid #e4e5ed;
+
+    border-radius: 13px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+
+    color: #182033;
+}
+
+
+.technology-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 35px rgba(0, 0, 0, 0.09);
+
+    border-color: #635bff;
+}
+
+
+
+/* ==========================================
+   TECHNOLOGY ICON
+========================================== */
+
+.technology-icon {
+
+    height: 150px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 38px;
+
+    font-weight: bold;
+
+    color: white;
+}
+
+
+.html {
+
+    background: #e44d26;
+}
+
+
+.css {
+
+    background: #2874f0;
+}
+
+
+.javascript {
+
+    background: #d9ae19;
+}
+
+
+.bootstrap {
+
+    background: #713ac2;
+}
+
+
+.tailwind {
+
+    background: #20a5c9;
+}
+
+
+
+/* ==========================================
+   TECHNOLOGY CARD CONTENT
+========================================== */
+
+.card-content {
+
+    padding: 25px;
+}
+
+
+.technology-number {
+
+    color: #635bff;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+.card-content h3 {
+
+    font-size: 22px;
+
+    margin: 8px 0;
+}
+
+
+.card-content p {
+
+    color: #737b8d;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+.explore {
+
+    color: #635bff;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+
+/* ==========================================
+   PROCESS
+========================================== */
+
+.process-section {
+
+    background: #f7f8fc;
+}
+
+
+.process-grid {
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.process-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e5e6ed;
+
+    text-align: center;
+}
+
+
+.process-number {
+
+    width: 50px;
+
+    height: 50px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #efeeff;
+
+    color: #635bff;
+
+    border-radius: 50%;
+
+    font-weight: bold;
+}
+
+
+.process-card h3 {
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+
+.process-card p {
+
+    color: #737b8d;
+
+    font-size: 13px;
+}
+
+
+
+/* ==========================================
+   ABOUT
+========================================== */
+
+.about-section {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 70px;
+
+    background: white;
+}
+
+
+.about-section > div:first-child {
+
+    max-width: 650px;
+}
+
+
+.about-section h2 {
+
+    font-size: 38px;
+
+    margin-bottom: 20px;
+}
+
+
+.about-section p:not(.tag) {
+
+    color: #737b8d;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+}
+
+
+.stats {
+
+    display: flex;
+
+    gap: 45px;
+}
+
+
+.stats div {
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.stats strong {
+
+    color: #635bff;
+
+    font-size: 35px;
+}
+
+
+.stats span {
+
+    color: #737b8d;
+
+    font-size: 12px;
+}
+
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer {
+
+    background: #111522;
+
+    color: white;
+
+    padding: 60px 8% 20px;
+}
+
+
+.footer-content {
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr;
+
+    gap: 50px;
+
+    padding-bottom: 40px;
+}
+
+
+.footer-content .logo {
+
+    color: white;
+
+    margin-bottom: 15px;
+}
+
+
+.footer-content p {
+
+    color: #8e95a6;
+
+    font-size: 13px;
+
+    max-width: 350px;
+}
+
+
+.footer-links {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+
+.footer-links h3 {
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+
+.footer-links a {
+
+    color: #8e95a6;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+
+.footer-links a:hover {
+
+    color: white;
+}
+
+
+.copyright {
+
+    border-top: 1px solid #292e3b;
+
+    padding-top: 20px;
+
+    text-align: center;
+
+    color: #73798a;
+
+    font-size: 11px;
+}
+
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 950px) {
+
+    .hero {
+
+        padding-left: 5%;
+
+        padding-right: 5%;
+    }
+
+
+    section {
+
+        padding-left: 5%;
+
+        padding-right: 5%;
+    }
+
+
+    .hero h1 {
+
+        font-size: 50px;
+    }
+
+
+    .technology-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .process-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 700px) {
+
+    .navbar {
+
+        height: auto;
+
+        padding: 18px 5%;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+
+    .navbar nav {
+
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+
+    .navbar nav a {
+
+        font-size: 11px;
+    }
+
+
+    .nav-button {
+
+        display: none;
+    }
+
+
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 70px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 42px;
+    }
+
+
+    .hero-visual {
+
+        width: 100%;
+    }
+
+
+    .technology-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .process-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-section {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .stats {
+
+        width: 100%;
+
+        justify-content: space-between;
+
+        gap: 15px;
+    }
+
+
+    .footer-content {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+```
