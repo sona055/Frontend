@@ -1,0 +1,1 @@
+Remote real photographs are used in the current build. Local images can be placed here later if offline support is required.

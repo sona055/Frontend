@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="MedixCare Ultimate - interactive medicine and healthcare platform concept">
+<title>MedixCare | Your Health, One Place</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="top-alert">⚕️ <b>Safety first:</b> MedixCare is a demo. It does not diagnose, prescribe, or replace a clinician or pharmacist.</div>
+<div id="progress"></div>
+<header class="header">
+<a class="logo" href="#home"><span>✚</span> MedixCare</a>
+<button class="mobile" id="mobile">☰</button>
+<nav id="nav"><a href="#home">Home</a><a href="#medicines">Medicines</a><a href="#services">Services</a><a href="#safety">Safety</a><a href="#doctors">Doctors</a><a href="#health">Health Hub</a></nav>
+<div class="head-actions"><button id="theme" class="head-btn">☼</button><button id="cartBtn" class="head-btn">🛒 <b id="cartCount">0</b></button></div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="hero-text reveal"><span class="eyebrow">PERSONALIZED • RESPONSIVE • SAFETY-FIRST</span>
+<h1>Your healthcare journey, <em>all in one place.</em></h1>
+<p>Search medicines, understand safety instructions, organize reminders, find a suitable specialist and explore trustworthy health education.</p>
+<div class="hero-actions"><button class="btn primary" onclick="document.getElementById('medicines').scrollIntoView({behavior:'smooth'})">Explore medicines →</button><button class="btn light" id="startGuide">Start safety guide</button></div>
+<div class="hero-mini"><div><b>500+</b><span>Demo medicine records</span></div><div><b>6</b><span>Safety moments</span></div><div><b>24/7</b><span>Digital access</span></div></div>
+</div>
+<div class="hero-media reveal"><div class="hero-image"><img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=90" alt="Healthcare professional speaking with a patient"></div>
+<div class="hero-badge"><span>✓</span><div><b>Patient-first design</b><small>Clear instructions at every step</small></div></div>
+</div><div class="orb orb-a"></div><div class="orb orb-b"></div>
+</section>
+
+<section class="quick-tools">
+<button data-tool="search">🔎 <b>Find medicine</b><small>Search by name/category</small></button>
+<button data-tool="doctor">🩺 <b>Find a specialist</b><small>Choose a department</small></button>
+<button data-tool="reminder">⏰ <b>Set reminder</b><small>Never miss a dose</small></button>
+<button data-tool="emergency">🚨 <b>Urgent help</b><small>Know when to seek help</small></button>
+</section>
+
+<section class="smart-search">
+<div><span class="eyebrow">ONE SEARCH</span><h2>What do you need today?</h2></div>
+<div class="search-box"><span>⌕</span><input id="search" placeholder="Medicine, symptom, service or safety topic..."><button id="searchBtn">Search</button></div>
+</section>
+
+<section class="section" id="medicines">
+<div class="section-head"><div><span class="eyebrow">MEDICINE EXPLORER</span><h2>Information before action</h2><p>Open any card for purpose, safety prompts and usage guidance.</p></div><button class="outline" id="allMeds">View all</button></div>
+<div class="filters" id="filters"><button class="active" data-cat="All">All</button><button data-cat="Pain Relief">Pain relief</button><button data-cat="Cold & Flu">Cold & Flu</button><button data-cat="Digestive">Digestive</button><button data-cat="Vitamins">Vitamins</button><button data-cat="First Aid">First aid</button></div>
+<div class="medicine-grid" id="medicineGrid"></div>
+</section>
+
+<section class="section safety" id="safety">
+<div class="section-head centered"><div><span class="eyebrow">MEDICATION SAFETY</span><h2>Know • Check • Ask</h2><p>Built around patient-safety principles. WHO emphasizes active patient involvement in safer medication use. citeturn0search0turn0search6</p></div></div>
+<div class="safety-layout">
+<div class="safety-photo"><img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1000&q=90" alt="Medicines and healthcare supplies"></div>
+<div class="moments">
+<div class="moment active"><span>01</span><div><h3>Before you start</h3><p>Know the medicine name, active ingredient, purpose, dose and expiration date. FDA guidance encourages asking these questions and following directions. citeturn0search14turn0search4</p></div></div>
+<div class="moment"><span>02</span><div><h3>Check the label</h3><p>Read the label and patient information. Pay attention to warnings, directions, storage and special instructions.</p></div></div>
+<div class="moment"><span>03</span><div><h3>Tell your healthcare team</h3><p>Keep a current medicine list and tell clinicians/pharmacists about medicines, supplements and relevant allergies.</p></div></div>
+<div class="moment"><span>04</span><div><h3>Check interactions</h3><p>If you are unsure about combinations, ask a pharmacist or clinician rather than guessing.</p></div></div>
+<div class="moment"><span>05</span><div><h3>Monitor and report</h3><p>Know what side effects or warning signs your medicine information mentions and seek professional advice when concerned.</p></div></div>
+<div class="moment"><span>06</span><div><h3>Store and dispose safely</h3><p>Follow product-specific storage directions and use appropriate disposal guidance for unused or expired medicines. citeturn0search3turn0search12</p></div></div>
+</div></div>
+</section>
+
+<section class="instruction-banner reveal">
+<div><span class="eyebrow">STEP-BY-STEP MODE</span><h2>Don't know what to do next?</h2><p>Choose a task and the website walks you through the process.</p></div>
+<div class="instruction-buttons"><button data-instruction="medicine">💊 Taking a medicine</button><button data-instruction="prescription">📄 Prescription</button><button data-instruction="appointment">🩺 Appointment</button><button data-instruction="emergency">🚨 Urgent symptoms</button></div>
+</section>
+
+<section class="section services" id="services"><div class="section-head centered"><div><span class="eyebrow">SMART TOOLS</span><h2>Designed around real user tasks</h2></div></div>
+<div class="service-grid">
+<article class="service reveal" data-action="bmi"><div>⚖️</div><h3>BMI calculator</h3><p>Enter height and weight and see a basic BMI result.</p><button>Open tool →</button></article>
+<article class="service reveal" data-action="reminder"><div>⏰</div><h3>Medicine reminder</h3><p>Create a browser-based demo reminder with a time and medicine name.</p><button>Set reminder →</button></article>
+<article class="service reveal" data-action="doctor"><div>🩺</div><h3>Doctor finder</h3><p>Select a speciality and request a demo appointment.</p><button>Find doctor →</button></article>
+<article class="service reveal" data-action="firstaid"><div>🧰</div><h3>First-aid basics</h3><p>Open concise instructions for common minor situations and emergencies.</p><button>Read guide →</button></article>
+</div></section>
+
+<section class="photo-split reveal">
+<div><span class="eyebrow">MODERN PHARMACY EXPERIENCE</span><h2>Every screen has a purpose.</h2><p>Clear cards, readable instructions, real photography, touch-friendly controls and responsive layouts make the experience usable across devices.</p><div class="check-list"><span>✓ Mobile-first layout</span><span>✓ Keyboard-friendly modals</span><span>✓ Reduced-motion support</span><span>✓ Persistent preferences</span></div></div>
+<div class="photo"><img src="https://images.unsplash.com/photo-1580281658628-9b8b3e2c5e1b?auto=format&fit=crop&w=1200&q=90" alt="Doctor consultation in a modern healthcare setting"></div>
+</section>
+
+<section class="section doctors" id="doctors"><div class="section-head"><div><span class="eyebrow">SPECIALISTS</span><h2>Find a department</h2></div><button class="outline" onclick="appointment()">Book consultation</button></div>
+<div class="doctor-grid">
+<article class="doctor reveal"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=700&q=90" alt="Doctor"><div><h3>Dr. Arjun Rao</h3><p>General Physician</p><button onclick="appointment('General Physician')">View availability →</button></div></article>
+<article class="doctor reveal"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=700&q=90" alt="Doctor"><div><h3>Dr. Meera Shah</h3><p>Dermatologist</p><button onclick="appointment('Dermatologist')">View availability →</button></div></article>
+<article class="doctor reveal"><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=700&q=90" alt="Doctor"><div><h3>Dr. Karthik Iyer</h3><p>Cardiologist</p><button onclick="appointment('Cardiologist')">View availability →</button></div></article>
+<article class="doctor reveal"><img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=700&q=90" alt="Healthcare professional"><div><h3>Dr. Ananya Menon</h3><p>Pediatrician</p><button onclick="appointment('Pediatrician')">View availability →</button></div></article>
+</div></section>
+
+<section class="health" id="health"><div class="health-img"><img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&w=1200&q=90" alt="Healthy lifestyle food"></div><div class="health-copy"><span class="eyebrow">HEALTH HUB</span><h2>Guides people can actually use.</h2><p>Short educational guides with a clear “what to do next” section.</p><div class="guides"><button data-guide="hydration"><b>Hydration</b><span>Simple daily habits →</span></button><button data-guide="sleep"><b>Sleep</b><span>Build a consistent routine →</span></button><button data-guide="medicine"><b>Medicine safety</b><span>Questions to ask →</span></button><button data-guide="storage"><b>Storage</b><span>Follow product directions →</span></button></div></div></section>
+
+<section class="emergency"><div><span class="eyebrow">URGENT SITUATIONS</span><h2>Know when to stop browsing and get help.</h2><p>If someone has severe difficulty breathing, loss of consciousness, severe bleeding or another life-threatening emergency, seek emergency medical help rather than relying on this website.</p></div><button class="btn emergency-btn" id="emergencyBtn">Open emergency guide</button></section>
+
+<section class="section faq"><div class="section-head centered"><div><span class="eyebrow">HELP & INSTRUCTIONS</span><h2>Everything explained clearly</h2></div></div>
+<div class="faq-list"><button>How should I use medicine information on this site? <span>+</span></button><div>Use it for general education. Always check the medicine's current package information and follow advice from your doctor or pharmacist. FDA provides patient medicine information and advises people to talk with healthcare professionals when questions arise. citeturn0search4</div>
+<button>Can this website diagnose me? <span>+</span></button><div>No. The symptom navigator only helps route you toward a medical speciality. It is not a diagnostic system.</div>
+<button>What should I do if I am unsure about a medicine? <span>+</span></button><div>Pause and ask a qualified healthcare professional or pharmacist. WHO's patient-safety approach emphasizes “KNOW. CHECK. ASK.” citeturn0search0</div>
+<button>Are the images and medicine prices real? <span>+</span></button><div>The photographs are real stock photographs, but the catalogue, prices, doctors and transactions are demo content. They should not be treated as a real pharmacy inventory.</div>
+</div></section>
+
+<section class="contact section" id="contact"><div><span class="eyebrow">CONTACT</span><h2>Need help with the platform?</h2><p>Use the demo form to test validation and submission feedback.</p></div><form id="contactForm"><input required placeholder="Full name"><input required type="email" placeholder="Email"><select><option>General enquiry</option><option>Medicine information</option><option>Doctor appointment</option><option>Technical issue</option></select><textarea required rows="5" placeholder="Write your message"></textarea><button class="btn primary">Send message →</button></form></section>
+</main>
+
+<footer><div class="logo"><span>✚</span> MedixCare</div><p>Healthcare website concept • Educational demo</p><p>© 2026</p></footer>
+
+<div class="modal" id="modal"><div class="modal-card" id="modalCard"></div></div>
+<aside class="drawer" id="drawer"><div class="drawer-head"><h2>Demo cart</h2><button onclick="closeCart()">×</button></div><div id="cartItems"></div><div class="total"><span>Total</span><b id="total">₹0</b></div><button class="btn primary full" onclick="notify('Demo checkout only — no payment processed')">Continue</button></aside>
+<div class="toast" id="toast"></div>
+<script src="js/script.js"></script>
+</body></html>
