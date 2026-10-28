@@ -43,7 +43,7 @@ console.log(typeof isCompleted);
 console.log(typeof result);
 
 
-console.log("task-5");
+console.log("task-5");  
 let a = 10;
 let b = 20;
 
@@ -53,3 +53,25 @@ b = temp;
 
 console.log("a =", a);
 console.log("b =", b);
+
+
+let arr = [10, 20, 30, 20, 40, 10, 50];
+let results = [];
+
+for (let i = 0; i < arr.length; i++) {
+    let found = false;
+
+    for (let j = 0; j < result.length; j++) {
+        if (arr[i] === result[j]) {
+            found = true;
+            break;
+        }
+    }
+
+    if (found === false) {
+        result[result.length] = arr[i];
+    }
+}
+
+console.log(results);
+
